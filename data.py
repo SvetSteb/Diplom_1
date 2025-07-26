@@ -1,0 +1,8 @@
+BUN_NAME = 'Булочка тестировщика'
+BUN_PRICE = 33.33
+
+INGREDIENT_NAME_SAUSE = 'Соус а-ля тест'
+INGREDIENT_PRICE_SAUSE = 5.20
+
+INGREDIENT_NAME_FILLING = 'Котлета по тестовому рецепту'
+INGREDIENT_PRICE_FILLING = 50.0
