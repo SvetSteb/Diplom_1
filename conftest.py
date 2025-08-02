@@ -5,6 +5,9 @@ from unittest.mock import Mock
 from data import *
 from praktikum.ingredient_types import INGREDIENT_TYPE_FILLING, INGREDIENT_TYPE_SAUCE
 from praktikum.bun import Bun
+from praktikum.database import Database
+from praktikum.ingredient import Ingredient
+from praktikum.burger import Burger
 
 # Фикстура для создания объекта класса для каждого теста
 @pytest.fixture
@@ -34,3 +37,20 @@ def ingredient_mock_filling():
     ingredient_mock.get_name.return_value = INGREDIENT_NAME_FILLING
     ingredient_mock.get_type.return_value = INGREDIENT_TYPE_FILLING
     return ingredient_mock
+
+@pytest.fixture()
+def db():
+    db = Database()
+    return db
+
+@pytest.fixture()
+def ingredient():
+    test_ingredient = Ingredient(INGREDIENT_TYPE_FILLING, INGREDIENT_NAME_FILLING,
+                                     INGREDIENT_PRICE_FILLING)
+    return test_ingredient
+
+@pytest.fixture()
+def burger():
+    test_burger = Burger()
+    return test_burger
+    

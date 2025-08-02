@@ -6,12 +6,6 @@ from data import *
 
 class TestIngredient:
 
-    @pytest.fixture(autouse=True)
-    def ingredient(self):
-        test_ingredient = Ingredient(INGREDIENT_TYPE_FILLING, INGREDIENT_NAME_FILLING,
-                                     INGREDIENT_PRICE_FILLING)
-        return test_ingredient
-
     # Тестирование метода инициализации
     @pytest.mark.parametrize('name, price, type',[(INGREDIENT_NAME_FILLING, INGREDIENT_PRICE_FILLING, INGREDIENT_TYPE_FILLING),
                                                   (INGREDIENT_NAME_SAUSE, INGREDIENT_PRICE_SAUSE, INGREDIENT_TYPE_SAUCE)])

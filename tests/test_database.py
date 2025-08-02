@@ -4,12 +4,6 @@ from praktikum.database import Database
 
 class TestDatabase:
 
-    @pytest.fixture(autouse=True)
-    def db(self):
-        db = Database()
-        return db
-
-
     def test_available_buns_return_list_len_three(self, db):
         assert len(db.available_buns()) == 3
 

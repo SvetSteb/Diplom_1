@@ -6,12 +6,6 @@ from praktikum.burger import Burger
 from data import *
 
 class TestBurger:
-
-    # фикстура для тестирования класса Burger
-    @pytest.fixture(autouse=True)
-    def burger(self):
-        test_burger = Burger()
-        return test_burger
     
     # Тестирование инициализации объекта класса Burger
     def test_init_object_is_initialized(self, burger):
