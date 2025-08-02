@@ -23,3 +23,4 @@ class TestDatabase:
     def test_available_ingredients_add_new_return_list_len_seven(self, db, ingredient_mock_filling):
         db.ingredients.append(ingredient_mock_filling)
         assert len(db.available_ingredients()) == 7
+        

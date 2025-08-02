@@ -7,7 +7,7 @@ from praktikum.ingredient_types import INGREDIENT_TYPE_FILLING, INGREDIENT_TYPE_
 from praktikum.bun import Bun
 
 # Фикстура для создания объекта класса для каждого теста
-@pytest.fixture(autouse=True)
+@pytest.fixture
 def bun():
     test_bun = Bun(BUN_NAME, BUN_PRICE)
     return test_bun

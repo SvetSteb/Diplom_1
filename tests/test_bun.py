@@ -1,4 +1,5 @@
 import pytest
+
 from praktikum.bun import Bun
 from data import *
 
@@ -21,5 +22,3 @@ class TestBun:
     def test_get_price_return_price(self, price):
         bun = Bun('Булочка', price)
         assert bun.get_price() == price
-
-

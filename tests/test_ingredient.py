@@ -33,3 +33,4 @@ class TestIngredient:
     # Тест метода get_type
     def test_get_type_return_filling(self, ingredient):
         assert ingredient.get_type() == INGREDIENT_TYPE_FILLING
+        
