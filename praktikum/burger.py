@@ -1,8 +1,6 @@
 from typing import List
-
 from praktikum.bun import Bun
 from praktikum.ingredient import Ingredient
-
 
 class Burger:
     """
@@ -46,3 +44,4 @@ class Burger:
         receipt.append(f'Price: {self.get_price()}')
 
         return '\n'.join(receipt)
+
